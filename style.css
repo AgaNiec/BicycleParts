@@ -1,0 +1,596 @@
+:root {
+  --border: #7d7c7c;
+  --borderProduct: #979696;
+  --darkGreyBackground: #3c3b3a;
+  --darkGreyLogoHeader: #403f3e;
+  --darkGreyText: #3c3b3a;
+  --lightGrayText: #d7d7d7;
+  --lightGreyBackground: #f5f5f5;
+  --lineBasket: #d7d7d7;
+  --priceText: #a9a9a9;
+  --redButton: #e30613; 
+  --redText: #e30613;
+  --whiteBackground: #ffffff;
+  --whiteText: #ffffff;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+option {
+  background-color: var(--darkGreyBackground);
+}
+
+.inner-container { 
+  margin: 0px auto; 
+  width: 1280px;
+}
+
+.inner-container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.topBar {
+  background-color: var(--lightGreyBackground);
+}
+
+#login {
+  background-image: url(images/login.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  color: var(--darkGreyText);
+  float: right;
+  font-size: 16px; 
+  line-height: 35px;
+  padding-left: 35px;
+}
+
+.user-login {
+  color: var(--darkGreyText);
+}
+
+#header_top {
+  height: 106px;
+}
+
+.logo-header {
+  float: left;
+  padding-left: 15px;
+}
+
+.logo-header img {
+  height: 55%;
+  padding-top: 20px;
+}
+
+.telephone-container {
+  float: left;
+  padding-left: 70px;
+}
+
+.telephone-contact {
+  background-image: url(images/phone.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  float: right;
+  font-size: 14px;
+  max-width: 155px;
+  padding-left: 40px;
+  padding-top: 30px;
+}
+
+.telephone-text {
+  color: var(--darkGreyText);
+  font-weight: bold;
+}
+
+.phone-number {
+  color: var(--darkGreyText);
+  font-size: 18px;
+}
+
+.phone-number.footer-phone {
+  color: var(--whiteText);
+}
+
+.nr {
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+.search-container {
+  float: left;
+  height: 100%;
+  width: 538px;
+}
+
+.input-button { 
+  line-height: 45px;
+  margin: 0px auto;
+  padding: 30px 0px;
+  position: relative;
+  width: 438px;
+}
+
+input { 
+  background-image: url(images/keyboard.png);
+  background-position: center left 15px; 
+  background-repeat: no-repeat;
+  border-radius: 3px 3px 3px 3px;
+  border: 1px solid var(--border);
+  color: #afafae;
+  font-size: 12px;
+  font-style: italic;
+  height: 45px;
+  padding-left: 41px;
+  padding-right: 100px;
+  width: 100%;
+}
+
+input:focus {
+  border: 2px solid var(--redText);
+}
+
+.search {
+  background-color: var(--redButton);
+  border-radius: 0px 3px 3px 0px;
+  color: var(--whiteText);
+  font-size: 16px;
+  height: 45px;
+  position: absolute;
+  right: 0px;
+  top: 30px;
+  width: 92px;
+}
+
+.basket-container {
+  background-image: url(images/basket.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  float: left;
+  font-size: 14px;
+  height: 100%;
+  padding-left: 50px;
+  padding-top: 23px;
+}
+
+.basket-container-link {
+  color: var(--darkGreyText);
+
+}
+.your-basket {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.line-basket {
+  background-color: var(--lineBasket);
+  border: none;
+  height: 2px;
+  width: 98px;
+}
+
+#menu_panel {
+  background-color: var(--darkGreyBackground);
+  height: 52px;
+  line-height: 52px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+.drop-down-menu { 
+  background-color: var(--redButton);
+  background-image: url(images/arrow-down.png);
+  background-position: center right 20px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  color: var(--whiteText); 
+  font-size: 16px;
+  height: 52px;
+  padding: 0px 71px 0px 30px;   
+  width: 290px;
+}
+
+.header-main-menu {
+  float: right;
+  height: 52px;
+  padding: 0px;
+  text-align: right; 
+  width: calc(100% - 290px);
+}
+
+.menu-list {
+  display: inline-block;
+  margin:  0px -2px;
+  vertical-align: top;
+}
+
+.menu-link {
+  color: var(--whiteText);   
+  display: block;
+  font-size: 16px;
+  padding: 0px 18px;
+  position: relative;
+}
+
+.menu-link.home {
+  background-image: url('images/home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 52px;
+  width: 18px;
+}
+
+.menu-link::before {
+  background-color: var(--redButton); 
+  bottom: 0px; 
+  content: ''; 
+  display: block; 
+  height: 3px; 
+  left: 0px; 
+  position: absolute; 
+  transition: all 200ms ease-in-out; 
+  width: 0px; 
+}
+
+.menu-link:hover::before {
+  width: 100%;  
+}
+
+.menu-link.promotion::before { 
+  background-color: var(--darkGreyBackground); 
+}
+
+.menu-link.promotion {
+  background-color: var(--redButton); 
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+#slider_container {
+  height: 560px;
+}
+
+.slider {
+  background-image: url(images/slider.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 2px 10px;
+  height: 552px;
+}
+
+.slider .inner-container {
+  position: relative; 
+}
+
+.arrow {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  height: 22px;
+  position: absolute;
+  top: 50%; 
+  width: 14px;
+}
+
+.leftArrow { 
+  background-image: url(images/left-arrow.png);
+  left: 0px; 
+}
+
+.rightArrow {
+  background-image: url(images/right-arrow.png);
+  right: 0px;
+}
+
+.slider-text {
+  color: var(--whiteText);
+  float: left;
+  font-size: 33px;
+  padding: 65px;
+}
+
+.sliderTxt {
+  font-size: 47px;
+  font-weight: bold;
+}
+
+.slider-line {
+  background-color: var(--darkGreyBackground);
+  border: none;
+  height: 2px;
+  margin: 16px 0px;
+  width: 114px;
+}
+
+.slider-description {
+  font-size: 25px;
+}
+
+.sliderBtn {
+  height: 6px; 
+  line-height: 6px; 
+  text-align: center; 
+}
+
+.slider-btn {
+  background-color: var(--darkGreyBackground);
+  height: 5px;
+  position: relative;
+  width: 50px;
+}
+
+.slider-btn::before {
+  background-color: var(--redButton);
+  bottom: 0px;
+  content: '';
+  display: block;
+  height: 5px;
+  left: 0px;
+  position: absolute;
+  transition: all 200ms ease-in-out;
+  width: 0px;
+}
+
+.slider-btn:hover::before {
+  width: 100%;
+}
+
+.info-container {
+  height: 156px;
+  padding-left: 90px;
+  padding-top: 65px;
+}
+
+.information {
+  color: var(--darkGreyText);
+  float: left;
+  font-size: 14px;
+  padding: 20px 95px;
+}
+
+.info-title {
+  font-size: 16px;
+}
+
+.medal {
+  background-image: url(images/medal.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.supply {
+  background-image: url(images/supply.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.padlock {
+  background-image: url(images/padlock.png);
+  background-position: center left 18px;
+  background-repeat: no-repeat;
+}
+
+.product-background {
+  background-color: var(--lightGreyBackground);
+  height: 518px;
+}
+
+.product-container {
+  padding: 32px 77px;
+  position: relative;
+}
+
+.product-container::before {
+  background-image: url(images/left-arrow.png);
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 22px;
+  left: 0px;
+  position: absolute;
+  top: 245px;
+  width: 14px;
+}
+
+.product-container::after {
+  background-image: url(images/right-arrow.png);
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 22px;
+  position: absolute;
+  right: 0px;
+  top: 245px;
+  width: 14px;
+}
+
+.product {
+  background-color: var(--whiteBackground);
+  border-radius: 4px;
+  border: 2px solid var(--borderProduct);
+  box-shadow: 0px 4px 10px;
+  float: left;
+  height: 447px;
+  margin: 0px 24px;
+  position: relative;
+  width: 323px;
+}
+
+.product::before {
+  background-image: url(images/promocja.png);
+  content: '';
+  display: block;
+  height: 113px;
+  left: -12px;
+  position: absolute;
+  top: -11px;
+  width: 113px;
+}
+
+.product-description {
+  color: var(--darkGreyText);
+  float: right;
+  font-size: 20px;
+  padding: 22px;
+  text-align: right;
+}
+
+.img-product {
+  text-align: center;
+}
+
+.price {
+  color: var(--priceText);
+  font-size: 17px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.promotional-price {
+  color: var(--redText);
+  font-size: 34px;
+  text-align: center;
+}
+
+.check-price {
+  text-align: center;
+}
+
+.price-button {
+  background-color: var(--darkGreyBackground);
+  border-radius: 4px;
+  color: var(--whiteText);
+  font-size: 16px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transition: all 200ms linear;
+  width: 112px;
+}
+
+.price-button:hover {
+  background-color: var(--redButton);
+}
+
+.color-text {
+  color: var(--redText);
+}
+
+.footer {
+  background-color: var(--darkGreyBackground);
+  height: 155px;
+}
+
+.footer-contener {
+  height: 50px;
+  line-height: 50px;
+}
+
+.footer-list {
+  float: left;
+  font-size: 16px;
+  margin-left: -20px;
+  padding-right: 45px;
+}
+
+.footer-link {
+  color: var(--lightGrayText);
+}
+
+.social-media {
+  background-image: url(images/fb.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  color: var(--whiteText);
+  float: right;
+  font-size: 14px;
+  padding-right: 25px;
+}
+
+ .facebook {
+   color: var(--whiteText);
+ }
+
+.bottomBar {
+  color: var(--whiteText);
+  font-size: 14px;
+  height: 85px;
+  line-height: 85px;
+}
+
+.logo-footer {
+  float: left;
+  padding: 25px 50px 0 0;
+  max-width: 200px;
+}
+
+.logo-footer-image {
+  max-width: 100%;
+}
+
+.telephone-contact-footer {
+  float: left;
+  line-height: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.telephone-contact-footer::before {
+  background-image: url(images/phone2.png);
+  content: '';
+  display: block;
+  height: 41px;
+  left: 0px;
+  position: absolute;
+  top: 30px;
+  width: 33px;
+}
+
+.mail-contact {
+  background-image: url(images/mail.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+  float: left;
+  padding-left: 20px;
+}
+
+.mail {
+  color: var(--whiteText);
+}
+
+.footer-information {
+  font-size: 12px;
+  height: 69px;
+  padding-top: 20px;
+  text-align: center;
+}
